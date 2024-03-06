@@ -1,0 +1,349 @@
+<a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
+
+
+
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-574-mexant.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/process.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+<!--
+
+TemplateMo 574 Mexant
+
+https://templatemo.com/tm-574-mexant
+
+-->
+
+  </head>
+  <style>
+
+
+   .header-image-container {
+      position: relative;
+      /* Adjust the margin to move the image to the right */
+    }
+
+    .header-image {
+      width: 100%;
+      height: 600px;
+      filter: blur(3px) brightness(80%); /* Adjust the blur effect */
+    }
+
+    .image-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 60px;
+      font-weight: bold;
+      text-align: center;
+      text-underline-position: below;
+    }
+    .image-text1 {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+.Aboutcon {
+  text-align: center; /* Center align text */
+}
+
+.aboutline {
+  width: 900px; /* Adjust maximum width as needed */
+  margin: 0 auto;
+  text-align: center; /* Center align container */
+}
+.aboutline p {
+  font-size: 18px; /* Adjust font size as needed */
+  color: #333;
+  width: 900px;
+ margin-top: 20px;
+
+ text-align: center;
+   /* Center align container */
+}
+.highlight {
+  color: #ff4500; /* Choose your desired color */
+}
+
+.aboutline h2 {
+  font-size: 32px; /* Adjust font size as needed */
+  color: #333;
+  font-weight: bold; /* Change text color as needed */
+}
+
+.why-choose-us {
+  padding: 20px;
+  text-align:center;
+
+}
+
+.flip-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flip-box {
+  width: calc(50% - 20px); /* Adjust as needed for spacing */
+  margin: 10px;
+  perspective: 1000px;
+  width: 250px;
+  height: 250px; /* Adjust height */
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+
+.flip-box-back {
+  background-color: #fff;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-box-back h4 {
+
+ margin-bottom:30px;
+}
+
+.flip-box-front h4 {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7); /* Background color for better readability */
+  padding: 5px 10px;
+}
+
+
+.flip-box-front img,
+.flip-box-back img {
+  width: 40%; /* Ensure the image fits within the container */
+  height: 40%; /* Ensure the image fits within the container */
+  display: block; /* Ensure the image does not create extra space */
+  margin: auto;
+  margin-top: 30px;/* Center the image horizontally */
+}
+
+  </style>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  {% include 'include/navbar.html'%}
+  <!-- ***** Header Area End ***** -->
+
+
+
+
+  <div class="header-image-container">
+    <img src="{% static 'images/slide-01.jpg' %}" alt="Image" class="header-image">
+    <div class="image-text">About Us</div>
+
+  </div>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <div class="container-fluid" >
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                <div class="h-100 position-relative">
+                    <img src="{%static 'images/workimage.jpg'%}" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
+                    <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                        <img src="{%static 'images/workimage1.jpg'%}" class="img-fluid w-100 rounded" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+
+                <h1 class="mb-4" style="font-weight: bold;">Preparing For Your Success <br>Providing Best <span class="highlight">IT Solutions</span></h1>
+                <p style="font-size: 18px;">ProgGenius offers comprehensive software development outsourcing, system integration, and solution delivery services on a global scale. Our dedication lies in fostering long-term partnerships with clients, delivering excellence through dedicated teams of developers.</p>
+                <p class="mb-4"style="font-size: 18px;" >Our commitment is rooted in comprehending your business needs and transforming them into groundbreaking software solutions, propelling your growth and triumph.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<section class="why-choose-us" style="margin: 0;">
+  <h2 style="font-weight:bold;">Why Choose Us</h2>
+  <div class="flip-box-container">
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="{% static 'images/responsive.png' %}" alt="Front Image 1">
+          <h4>Responsive Design</h4>
+        </div>
+        <div class="flip-box-back">
+          <h4 >Responsive Design</h4>
+          <p>Delivering responsive design solutions to optimize user experiences across all devices.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="{% static 'images/24.jpg' %}" alt="Front Image 1">
+          <h4>Call Support</h4>
+        </div>
+        <div class="flip-box-back">
+          <h4>Call Support</h4>
+          <p>Ensuring immediate assistance and support through our responsive call support services.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="{% static 'images/quality.jpg' %}" alt="Front Image 1">
+          <h4>Quality Product</h4>
+        </div>
+        <div class="flip-box-back">
+          <h4>Quality Product</h4>
+          <p>Guaranteeing top-notch quality products through rigorous testing and meticulous craftsmanship.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="{% static 'images/software.png' %}" alt="Front Image 1">
+          <h4>Productive Software</h4>
+        </div>
+        <div class="flip-box-back">
+          <h4>Productive Software</h4>
+          <p>Empowering businesses with productive software solutions designed for efficiency and growth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+{% include 'include/footer.html' %}
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/isotope.min.js' %}"></script>
+  <script src="{% static 'js/owl-carousel.js' %}"></script>
+  <script src="{% static 'js/tabs.js' %}"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+    <script>
+        var interleaveOffset = 0.5;
+
+      var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          progress: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              var slideProgress = swiper.slides[i].progress;
+              var innerOffset = swiper.width * interleaveOffset;
+              var innerTranslate = slideProgress * innerOffset;
+              swiper.slides[i].querySelector(".slide-inner").style.transform =
+                "translate3d(" + innerTranslate + "px, 0, 0)";
+            }
+          },
+          touchStart: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = "";
+            }
+          },
+          setTransition: function(speed) {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = speed + "ms";
+              swiper.slides[i].querySelector(".slide-inner").style.transition =
+                speed + "ms";
+            }
+          }
+        }
+      };
+
+      var swiper = new Swiper(".swiper-container", swiperOptions);
+    </script>
+
+  </body>
+</html>

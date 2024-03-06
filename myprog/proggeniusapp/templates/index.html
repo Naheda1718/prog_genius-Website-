@@ -1,0 +1,235 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Prog_Genius</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-574-mexant.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/process.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+<!--
+
+TemplateMo 574 Mexant
+
+https://templatemo.com/tm-574-mexant
+
+-->
+  </head>
+<style>
+
+
+</style>
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  {% include 'include/navbar.html'%}
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <div class="swiper-container" id="top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        {% with background_image_url='images/slide-01.jpg' %}
+<div class="slide-inner" style="background-image: url('{% static background_image_url %}')">
+{% endwith %}
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2>We build great<em> Software</em> with extraordinary<em> Developers</em></h2>
+
+                  <div class="div-dec"></div>
+                  <p>Welcome to ProgGenius! We're here to help with all your digital needs. Whether you need a new mobile app, a website that grows with you, or thorough testing to make sure everything runs smoothly, we're committed to delivering top-notch results every step of the way.</p>
+                  <div class="buttons">
+
+                    <div class="orange-button">
+                      <a href="{% url 'contact' %}">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        {% with background_image_url='images/slide-02.jpg' %}
+<div class="slide-inner" style="background-image: url('{% static background_image_url %}')">
+{% endwith %}
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2> Step into the <em>Future </em> <br> with <em>Innovative </em> And Conventional <em>IT solutions</em></h2>
+
+                  <div class="div-dec"></div>
+                  <p>Experience the transformative impact of digital innovation with ProgGenius. Our team is committed to delivering cutting-edge solutions designed to elevate your business to new heights of success.</p>
+                  <div class="buttons">
+
+                    <div class="orange-button">
+                      <a href="{% url 'contact' %}">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="swiper-slide">
+        {% with background_image_url='images/slide-03.jpg' %}
+<div class="slide-inner" style="background-image: url('{% static background_image_url %}')">
+{% endwith %}
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2>Best One in Town<br>&amp; Crypto <em>Services</em></h2>
+                  <div class="div-dec"></div>
+                  <p>When you browse through different tags on TemplateMo website, you can see a variety of CSS templates which are responsive website designs for different individual needs. Please tell your friends about our website. Thank you.</p>
+                  <div class="buttons">
+                    <div class="green-button">
+                      <a href="#">Discover More</a>
+                    </div>
+                    <div class="orange-button">
+                      <a href="#">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="row">
+        <h2 style="text-align: center; color: #ff511a; font-weight: bold;">Services We Provide</h2>
+
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fa-brands fa-android"></i>
+            <h4>Android Application</h4>
+            <p>We architect intuitive user experiences, leveraging the unique capabilities offered by handheld devices.</p>
+            <a href="{% url 'service' %}" class="read-more">Explore more</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+           <i class="fa-solid fa-code"></i>
+            <h4>Web Application</h4>
+            <p>We craft slick and dynamic websites that captivate your audience and elevate your online presence to new heights.</p>
+            <a href="{% url 'webservice' %}" class="read-more">Explore more</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fa-solid fa-wrench"></i>
+            <h4>QA Automation</h4>
+            <p>Ensuring top-notch software quality through meticulous manual testing and cutting-edge automation.</p>
+            <a href="{% url 'qatest' %}" class="read-more">Explore more</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <h4>UI/UX</h4>
+            <p>Delivering tailored UI/UX solutions that anticipate user needs and exceed expectations..</p>
+            <a href="{% url 'uiux' %}" class="read-more">Explore more</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+{% include 'process.html' %}
+
+
+{% include 'include/footer.html' %}
+
+
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/isotope.min.js' %}"></script>
+  <script src="{% static 'js/owl-carousel.js' %}"></script>
+  <script src="{% static 'js/tabs.js' %}"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  <script>
+        var interleaveOffset = 0.5;
+
+      var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          progress: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              var slideProgress = swiper.slides[i].progress;
+              var innerOffset = swiper.width * interleaveOffset;
+              var innerTranslate = slideProgress * innerOffset;
+              swiper.slides[i].querySelector(".slide-inner").style.transform =
+                "translate3d(" + innerTranslate + "px, 0, 0)";
+            }
+          },
+          touchStart: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = "";
+            }
+          },
+          setTransition: function(speed) {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = speed + "ms";
+              swiper.slides[i].querySelector(".slide-inner").style.transition =
+                speed + "ms";
+            }
+          }
+        }
+      };
+
+      var swiper = new Swiper(".swiper-container", swiperOptions);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,344 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Mexant Template - Services page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-574-mexant.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/process.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+<!--
+
+
+TemplateMo 574 Mexant
+
+https://templatemo.com/tm-574-mexant
+
+-->
+<style>
+.main-services {
+    padding: 50px 0;
+}
+
+.main-services .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.programming-languages {
+    margin-top: 30px;
+}
+
+.programming-languages h2{
+   color:green;
+}
+.language-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.language-icon {
+    margin-right: 20px;
+}
+
+.language-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.language-details h2 {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    margin: 0;
+}
+.language-details{
+    flex-grow:1;
+}
+.col-lg-6 > h2 {
+    color: green; /* Change the color to green */
+}
+
+
+
+.language-name h2 {
+    margin: 0;
+    color: black;
+}
+
+.col-lg-6 {
+    padding: 0 15px;
+
+}
+
+
+
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+
+   .header-image-container {
+      position: relative;
+      /* Adjust the margin to move the image to the right */
+    }
+
+    .header-image {
+      width: 100%;
+      height: 600px;
+      filter: blur(3px) brightness(50%); /* Adjust the blur effect */
+    }
+
+    .image-text {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 60px;
+      font-weight: bold;
+      text-align: center;
+      width:auto;
+    }
+    .image-text1 {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 25px;
+      margin-top:30px;
+      font-weight: bold;
+       width:auto;
+      text-align: center;
+    }
+
+
+
+
+.header-apptitle {
+  text-align: center; /* Align the text to the center */
+  margin-bottom: 20px;
+  width: auto; /* Add some bottom margin for spacing */
+}
+
+.header-apptitle h2 {
+  font-size: 32px; /* Adjust the font size */
+  color: #333; /* Change the text color */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  width: auto;/* Make the text bold */
+}
+.header-apptitle p {
+  font-size: 20px; /* Adjust the font size */
+  color: #333; /* Change the text color */
+ width: auto;
+  text-align: center;
+
+  margin-top: 20px;
+ margin-left: 50px; /* Make the text bold */
+}
+
+
+  </style>
+
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  {% include 'include/navbar.html'%}
+  <!-- ***** Header Area End ***** -->
+
+
+
+  <div class="header-image-container">
+    <img src="{% static 'images/uiux.jpeg' %}" alt="Image" class="header-image">
+    <div class="image-text">UI UX Designs</div>
+    <div class="image-text1">A Trusted Global Provider of UI/UX Design Solution</div>
+  </div>
+
+  <div class="header-apptitle">
+    <h2> A UI/UX Deisgn Company Near You</h2>
+    <p>At ProgGenius, we're dedicated to crafting exceptional user experiences through innovative design solutions. With our talented team of UI/UX experts, we're committed to turning your ideas into captivating digital experiences, guiding you from conception to implementation and beyond. Whether it's a simple interface refresh or a complex redesign, we're here to ensure your users engage effortlessly with your product every step of the way.</p>
+    </div>
+
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="main-services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="{% static 'images/ui2.jpg' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+                <h2>UI/UX Design</h2>
+                <p>We are passionate about revolutionizing digital experiences through visionary design solutions.From wireframing to prototyping and final implementation, we meticulously craft each element to ensure a seamless user journey. With a focus on user-centric design principles, we empower businesses to connect with their audiences on a deeper level, driving engagement and satisfaction.</p>
+
+
+
+                  <div class="programming-languages">
+                    <h2>Tools</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                    <img src="{% static 'images/figma.png'%}" alt="Language Icon">
+                                </div>
+                                <div class="language-details">
+                                  <h2 class="language-name">FIGMA</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                     <img src="{% static 'images/adobe.png'%}" alt="Language Icon">
+                                </div>
+                                <div class="language-details">
+                                  <h2 class="language-name">ADOBE XD</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        </div>
+
+
+
+
+
+                <!--Databased-->
+
+
+
+
+
+                 <!--rogramming tools-->
+
+
+
+
+                        <!-- Add similar columns for other languages -->
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                        <!-- Add similar columns for other languages -->
+                    </div>
+                </div>
+
+
+                <!-- Add similar sections for databases and programming tools -->
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>Made By ProgGenius</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/isotope.min.js' %}"></script>
+  <script src="{% static 'js/owl-carousel.js' %}"></script>
+  <script src="{% static 'js/tabs.js' %}"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+    <script>
+        var interleaveOffset = 0.5;
+
+      var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          progress: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              var slideProgress = swiper.slides[i].progress;
+              var innerOffset = swiper.width * interleaveOffset;
+              var innerTranslate = slideProgress * innerOffset;
+              swiper.slides[i].querySelector(".slide-inner").style.transform =
+                "translate3d(" + innerTranslate + "px, 0, 0)";
+            }
+          },
+          touchStart: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = "";
+            }
+          },
+          setTransition: function(speed) {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = speed + "ms";
+              swiper.slides[i].querySelector(".slide-inner").style.transition =
+                speed + "ms";
+            }
+          }
+        }
+      };
+
+      var swiper = new Swiper(".swiper-container", swiperOptions);
+    </script>
+
+  </body>
+</html>

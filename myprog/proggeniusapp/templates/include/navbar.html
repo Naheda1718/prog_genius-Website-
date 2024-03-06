@@ -1,0 +1,73 @@
+{% load static %}
+<style>
+    .sub-menu {
+    display: none; /* Hide the sub-menu by default */
+    position: absolute;
+    background-color: #fff; /* Background color of the sub-menu */
+    border: 1px solid #ccc; /* Border color */
+    padding: 10px;
+}
+
+li:hover .sub-menu {
+    display: block; /* Show the sub-menu when hovering over its parent li */
+}
+
+.sub-menu li {
+    display: block;
+    clear: both;
+}
+
+.sub-menu li a {
+    display: block;
+    padding: 5px 10px;
+    color: #333; /* Link color */
+    text-decoration: none;
+}
+
+.sub-menu li a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+</style>
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="{% url 'home' %}" class="logo">
+                        <img src="{% static 'images/Prog logo-fotor-bg-remover-2024021221850.png' %}" alt=""  style="width: 120px; height: 120px;">
+                        <span class="logo-name" style="float: left;">PROGGENIUS</span>
+                      </a>
+                     
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="{% url 'home' %}" class="active">Home</a></li>
+                        <li class="has-sub">
+                            <a href="{% url 'home' %}#services">Our Services</a>
+                            <ul class="sub-menu">
+                                <li><a href="{%url 'service' %}">Android Development</a></li>
+                                <li><a href="{%url 'webservice' %}">Web App Development</a></li>
+                                <li><a href="{%url 'qatest' %}">QA Automation</a></li>
+                                <li><a href="{%url 'uiux' %}">UI/UX Design</a></li>
+                                
+                                <!-- Add more service links as needed -->
+                            </ul>
+                        </li>
+                       
+                        <li class="scroll-to-section"><a href="{% url 'about' %}">About Us</a></li>
+                        <li class="scroll-to-section"><a href="{% url 'contact' %}">Contact Us</a></li>
+                        <li class="scroll-to-section" style="display: none;"><a href="{% url 'contact' %}">Contact Us</a></li>
+                        
+                        
+                        
+                    </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
